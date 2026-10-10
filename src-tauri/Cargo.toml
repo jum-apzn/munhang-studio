@@ -1,0 +1,18 @@
+[package]
+name = "munhang-studio"
+version = "0.1.0"
+description = "Local Korean worksheet editor"
+authors = ["Munhang Studio contributors"]
+license = "Apache-2.0"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+munhang-core = { path = "../crates/core" }
+tauri-plugin-dialog = "2"
+serde_json = "1"
+tempfile = "3"
+serde = { version = "1", features = ["derive"] }
