@@ -1,0 +1,108 @@
+{
+  "package": {
+    "checked_parts": [
+      "mimetype",
+      "version.xml",
+      "META-INF/container.xml",
+      "META-INF/manifest.xml",
+      "META-INF/container.rdf",
+      "settings.xml",
+      "Contents/content.hpf",
+      "Contents/header.xml",
+      "Contents/section0.xml",
+      "Preview/PrvText.txt",
+      "BinData/image1.png"
+    ],
+    "issues": []
+  },
+  "schema": {
+    "validated_parts": [
+      "Contents/header.xml",
+      "Contents/section0.xml"
+    ],
+    "issues": []
+  },
+  "editor_open_safety": {
+    "validate_package": {
+      "checked_parts": [
+        "mimetype",
+        "version.xml",
+        "META-INF/container.xml",
+        "META-INF/manifest.xml",
+        "META-INF/container.rdf",
+        "settings.xml",
+        "Contents/content.hpf",
+        "Contents/header.xml",
+        "Contents/section0.xml",
+        "Preview/PrvText.txt",
+        "BinData/image1.png"
+      ],
+      "issues": []
+    },
+    "validate_document": {
+      "validated_parts": [
+        "Contents/header.xml",
+        "Contents/section0.xml"
+      ],
+      "issues": []
+    },
+    "blocking_package_errors": [],
+    "reopen_ok": true,
+    "reopen_error": null,
+    "document_validation_error": null
+  },
+  "raw_2024_schema_deviations": {
+    "Contents/header.xml": [
+      [
+        "head:charPr@shadeColor: value not allowed",
+        1
+      ],
+      [
+        "head:autoSpacing: element not expected",
+        1
+      ],
+      [
+        "head:autoSpacing: element not expected",
+        1
+      ],
+      [
+        "head:autoSpacing: element not expected",
+        1
+      ],
+      [
+        "head:autoSpacing: element not expected",
+        1
+      ],
+      [
+        "head:autoSpacing: element not expected",
+        1
+      ],
+      [
+        "head:autoSpacing: element not expected",
+        1
+      ],
+      [
+        "head:docOption: element not expected",
+        1
+      ]
+    ],
+    "Contents/section0.xml": [
+      [
+        "paragraph:secPr@tabStop: attribute not allowed",
+        1
+      ],
+      [
+        "core:transMatrix: element not expected",
+        1
+      ],
+      [
+        "core:pt0: element not expected",
+        1
+      ],
+      [
+        "paragraph:inMargin: element not expected",
+        1
+      ]
+    ]
+  }
+}
