@@ -6,9 +6,9 @@
 
 ## 28초 미리보기
 
-[![문항공방: 이미지 속 수식을 직접 고치고 풀이 공간을 조절하는 28초 영상](assets/promo/munhang-studio-promo-poster.png)](assets/promo/munhang-studio-spacious-slider-28s.mp4)
+https://github.com/user-attachments/assets/85115849-a2ea-4841-92de-5a503099fa0e
 
-[전체 영상 보기 · MP4](assets/promo/munhang-studio-spacious-slider-28s.mp4) · [영상 출처와 제작 설명](assets/promo/credits.txt)
+[전체 영상 보기](https://github.com/user-attachments/assets/85115849-a2ea-4841-92de-5a503099fa0e) · [MP4 다운로드](https://github.com/jum-apzn/munhang-studio/raw/refs/heads/main/assets/promo/munhang-studio-spacious-slider-28s.mp4) · [미리보기 이미지](assets/promo/munhang-studio-promo-poster.png) · [영상 출처와 제작 설명](assets/promo/credits.txt)
 
 실제 지원 기능과 검증한 OCR 결과를 바탕으로 사용 흐름을 재구성한 애니메이션입니다. 네이티브 GUI 실녹화가 아니며, 수식 조판 전환과 슬라이더는 입력 과정을 표현한 연출입니다. 자동 번역·자동 풀이·실시간 조판 미리보기 기능을 뜻하지 않습니다.
 
@@ -93,4 +93,3 @@ MUNHANG_FIXTURES="$PWD/examples/fixtures" cargo test --workspace local_engine_sm
 ## 라이선스
 
 Apache-2.0. [THIRD_PARTY.md](docs/THIRD_PARTY.md)와 별도 설치 도구의 라이선스를 확인하세요. Poppler 실행 파일·OCR 모델은 이 소스에 포함하지 않습니다.
-
