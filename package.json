@@ -1,0 +1,27 @@
+{
+  "name": "munhang-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test:web": "node --experimental-strip-types --test web/utils.test.ts",
+    "tauri": "tauri",
+    "test:dom": "npm run build && node --test web/dom.test.mjs",
+    "test": "npm run test:web && npm run test:dom",
+    "format": "prettier --write web/ package.json tsconfig.json vite.config.ts",
+    "format:check": "prettier --check web/ package.json tsconfig.json vite.config.ts"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.4",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.9.10",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.6"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
