@@ -4,6 +4,16 @@
 
 **0.1 개발 프리뷰**입니다. 원본 이미지 영역 선택, 본문 수정, 수식 스크립트 수정, 문항 재배열, 배점·풀이 여백, 1단/2단 HWPX 생성을 구현했습니다. 생성 HWPX의 ZIP/XML·수식 개체·이미지 참조를 테스트했지만, 한컴오피스에서 열기·인쇄·수식 편집 후 재저장 검증은 아직 하지 못했습니다. 배포용 설치 프로그램이 포함된 완성 릴리스가 아닙니다.
 
+## 28초 미리보기
+
+[![문항공방: 이미지 속 수식을 직접 고치고 풀이 공간을 조절하는 28초 영상](assets/promo/munhang-studio-promo-poster.png)](assets/promo/munhang-studio-spacious-slider-28s.mp4)
+
+[전체 영상 보기 · MP4](assets/promo/munhang-studio-spacious-slider-28s.mp4) · [영상 출처와 제작 설명](assets/promo/credits.txt)
+
+실제 지원 기능과 검증한 OCR 결과를 바탕으로 사용 흐름을 재구성한 애니메이션입니다. 네이티브 GUI 실녹화가 아니며, 수식 조판 전환과 슬라이더는 입력 과정을 표현한 연출입니다. 자동 번역·자동 풀이·실시간 조판 미리보기 기능을 뜻하지 않습니다.
+
+문항: Siyavula Education, *Mathematics Grade 11* §2.3, Example 8 · [원문](https://www.siyavula.com/read/za/mathematics/grade-11/equations-and-inequalities/02-equations-and-inequalities-03) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). 한국어 수동 번역·재조판·계수 3→5 사용자 편집. 원저자의 추천·보증을 뜻하지 않습니다.
+
 ## 개인정보와 비용
 
 - 문서를 서버에 올리지 않습니다. API 키·계정·유료 API를 사용하지 않습니다.
@@ -83,3 +93,4 @@ MUNHANG_FIXTURES="$PWD/examples/fixtures" cargo test --workspace local_engine_sm
 ## 라이선스
 
 Apache-2.0. [THIRD_PARTY.md](docs/THIRD_PARTY.md)와 별도 설치 도구의 라이선스를 확인하세요. Poppler 실행 파일·OCR 모델은 이 소스에 포함하지 않습니다.
+
