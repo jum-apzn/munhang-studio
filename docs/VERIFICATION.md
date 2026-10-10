@@ -1,6 +1,6 @@
 # 검증 상태 · 2026-10-10
 
-Linux x86_64 / Rust 1.99.0에서 수행했습니다. 개발 프리뷰이며 출시용 완성본으로 인증하지 않습니다.
+아래 로컬 검증은 Linux x86_64 / Rust 1.99.0에서 수행했습니다. 원격 CI 검증은 별도 항목에 기록합니다. 개발 프리뷰이며 출시용 완성본으로 인증하지 않습니다.
 
 ## 통과
 
@@ -13,12 +13,21 @@ Linux x86_64 / Rust 1.99.0에서 수행했습니다. 개발 프리뷰이며 출�
 - 독립 python-hwpx 6.8.0 검사: 패키지 검사, 알려진 Hancom 2011 차이를 허용하는 스키마 lint, 파서 재열기 검사에서 오류 0. 원시 2024 XSD 편차는 예제 validation-report.json에 별도 기록. 완전한 XSD 준수 인증이 아님.
 - 공식 한국어 모델 및 수식 가중치 다운로드는 고정 revision/체크섬 검증. 문서가 외부로 전송되는 API 코드는 없음.
 
-## 미실행 / 환경 차단
+## 원격 CI 통과 · 2026-10-10
 
-- Tauri 네이티브 빌드: glib/GTK/WebKit 개발 패키지 부재. 공식 apt 설치 시 설정 읽기/lock 권한 오류. cargo check는 glib-sys/gobject-sys 단계에서 실패했고 앱 타입 검사까지 도달하지 못함. 권한 우회 없음.
+소스 커밋 [`58a9f2d4df6ccdfad3acdcc889c41e0a8f442124`](https://github.com/jum-apzn/munhang-studio/commit/58a9f2d4df6ccdfad3acdcc889c41e0a8f442124)의 [Build and verify #1](https://github.com/jum-apzn/munhang-studio/actions/runs/38060107671)이 성공했습니다.
+
+- Ubuntu 24.04: Rust 테스트·fmt·clippy, 프런트 테스트/빌드, 실제 한국어 Tesseract OCR/Poppler PDF 통합검증, Tauri 네이티브 컴파일 및 Linux 개발 바이너리 artifact 업로드 통과.
+- Windows: Rust 테스트, 프런트 빌드, Tauri 네이티브 컴파일 및 Windows 개발 바이너리 artifact 업로드 통과.
+- CI artifact는 개발용 실행 파일이며 서명된 설치형 릴리스가 아닙니다. 네이티브 컴파일 성공은 실제 WebView UI 조작이나 한컴오피스 수용 검증을 뜻하지 않습니다.
+- 두 job의 GitHub Actions Node.js 20 런타임 폐기 경고는 있었으나, Actions가 Node.js 24로 실행되어 모든 단계가 성공했습니다.
+
+## 미실행 / 로컬 환경 차단
+
+- 로컬 Tauri 네이티브 빌드: glib/GTK/WebKit 개발 패키지 부재. 공식 apt 설치 시 설정 읽기/lock 권한 오류. cargo check는 glib-sys/gobject-sys 단계에서 실패했고 앱 타입 검사까지 도달하지 못함. 권한 우회 없음.
 - 실제 브라우저/WebView의 렌더링·마우스·OS 저장창: socket 권한 오류로 실행 불가. DOM 테스트는 모의 canvas/IPC를 사용하므로 실제 네이티브 검증과 다름.
 - 한컴오피스에서 열기, 수식 편집, 재저장, 인쇄/페이지 나눔: 한컴 실행 환경 부재로 미실행. 독립 파서 검증으로 대신 완료 처리하지 않음.
-- Windows/macOS OCR 설치 및 앱 실행: 미실행. 소스 내 CI가 Ubuntu/Windows 빌드를 시도하지만 게시 전에는 실행 결과 없음.
+- Windows/macOS OCR 설치 및 실제 앱 실행: 미실행. Windows 네이티브 컴파일만 위 원격 CI에서 통과했으며 macOS 빌드는 미실행입니다.
 
 ## 미구현
 
