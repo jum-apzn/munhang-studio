@@ -1,0 +1,3 @@
+    Checking munhang-core v0.1.0 ($WORKSPACE/munhang-studio/crates/core)
+    Checking munhang-cli v0.1.0 ($WORKSPACE/munhang-studio/crates/cli)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.20s

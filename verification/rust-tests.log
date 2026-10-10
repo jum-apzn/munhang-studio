@@ -1,0 +1,47 @@
+   Compiling munhang-core v0.1.0 ($WORKSPACE/munhang-studio/crates/core)
+   Compiling munhang-cli v0.1.0 ($WORKSPACE/munhang-studio/crates/cli)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.55s
+     Running unittests src/main.rs (munhang-studio/target/debug/deps/munhang_cli-a500a082ed642f93)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (munhang-studio/target/debug/deps/munhang_core-2c4a7975df167912)
+
+running 26 tests
+test formula::tests::basic_formula ... ok
+test formula::tests::bounds_depth ... ok
+test formula::tests::fraction_and_root ... ok
+test formula::tests::never_claims_empty_valid ... ok
+test formula::tests::bounds_unbraced_command_recursion ... ok
+test formula::tests::preserves_raw ... ok
+test formula::tests::rejects_malformed ... ok
+test formula::tests::bounds_unbraced_superscript_and_subscript_recursion ... ok
+test formula::tests::rejects_unknown ... ok
+test formula::tests::removes_math_delimiters ... ok
+test hwpx::tests::rejects_invalid_and_external_payloads ... ok
+test hwpx::tests::serde_contract_round_trips ... ok
+test runtime::tests::bounds_input_size ... ok
+test runtime::tests::local_engine_smoke_test ... ignored, Requires local engines and MUNHANG_FIXTURES with Korean/English PNG and PDFs
+test runtime::tests::local_formula_smoke_test ... ignored, Requires configured optional Paddle CPU sidecar and formula.png fixture
+test runtime::tests::rejects_bad_inputs ... ok
+test runtime::tests::serializes_status_contract ... ok
+test hwpx::tests::equation_reference_metadata_roundtrips_without_printing_duplicate_image ... ok
+test hwpx::tests::equations_escape_special_characters_without_losing_script ... ok
+test hwpx::tests::manifest_paths_resolve_and_style_references_exist ... ok
+test hwpx::tests::content_is_escaped_and_equations_are_editable_objects ... ok
+test hwpx::tests::image_is_clamped_to_column_width ... ok
+test hwpx::tests::image_asset_manifest_and_aspect_ratio_match ... ok
+test hwpx::tests::columns_and_answer_space_are_real_layout_properties ... ok
+test hwpx::tests::zip_signature_and_all_xml_are_valid ... ok
+test runtime::tests::subprocess_timeout_kills_child ... ok
+
+test result: ok. 24 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+   Doc-tests munhang_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

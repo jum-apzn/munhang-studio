@@ -1,0 +1,7 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> munhang-studio@0.1.0 format:check
+> prettier --check web/ package.json tsconfig.json vite.config.ts
+
+Checking formatting...
+All matched files use Prettier code style!

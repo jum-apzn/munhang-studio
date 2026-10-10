@@ -1,0 +1,14 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running unittests src/main.rs (munhang-studio/target/debug/deps/munhang_cli-a500a082ed642f93)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (munhang-studio/target/debug/deps/munhang_core-2c4a7975df167912)
+
+running 1 test
+test runtime::tests::local_engine_smoke_test ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 23 filtered out; finished in 3.85s
+

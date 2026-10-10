@@ -1,0 +1,38 @@
+[
+  {
+    "input": "superscript",
+    "characters": 16001,
+    "returncode": 0,
+    "scriptEmpty": true,
+    "warning": [
+      "수식의 중첩이 너무 깊습니다."
+    ]
+  },
+  {
+    "input": "subscript",
+    "characters": 16001,
+    "returncode": 0,
+    "scriptEmpty": true,
+    "warning": [
+      "수식의 중첩이 너무 깊습니다."
+    ]
+  },
+  {
+    "input": "sqrt",
+    "characters": 6001,
+    "returncode": 0,
+    "scriptEmpty": true,
+    "warning": [
+      "수식의 중첩이 너무 깊습니다."
+    ]
+  },
+  {
+    "input": "frac",
+    "characters": 6001,
+    "returncode": 0,
+    "scriptEmpty": true,
+    "warning": [
+      "수식의 중첩이 너무 깊습니다."
+    ]
+  }
+]

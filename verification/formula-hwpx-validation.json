@@ -1,0 +1,55 @@
+{
+  "validator": "python-hwpx 6.8.0",
+  "package": {
+    "checked_parts": [
+      "mimetype",
+      "version.xml",
+      "META-INF/container.xml",
+      "META-INF/manifest.xml",
+      "META-INF/container.rdf",
+      "settings.xml",
+      "Contents/content.hpf",
+      "Contents/header.xml",
+      "Contents/section0.xml",
+      "Preview/PrvText.txt"
+    ],
+    "issues": []
+  },
+  "schema": {
+    "validated_parts": [
+      "Contents/header.xml",
+      "Contents/section0.xml"
+    ],
+    "issues": []
+  },
+  "editor_open_safety": {
+    "validate_package": {
+      "checked_parts": [
+        "mimetype",
+        "version.xml",
+        "META-INF/container.xml",
+        "META-INF/manifest.xml",
+        "META-INF/container.rdf",
+        "settings.xml",
+        "Contents/content.hpf",
+        "Contents/header.xml",
+        "Contents/section0.xml",
+        "Preview/PrvText.txt"
+      ],
+      "issues": []
+    },
+    "validate_document": {
+      "validated_parts": [
+        "Contents/header.xml",
+        "Contents/section0.xml"
+      ],
+      "issues": []
+    },
+    "blocking_package_errors": [],
+    "reopen_ok": true,
+    "reopen_error": null,
+    "document_validation_error": null
+  },
+  "parsed_sections": 1,
+  "note": "Schema lint tolerates known 2011 Hancom differences from OWPML 2024. Hancom rendering/edit round-trip remains unverified."
+}

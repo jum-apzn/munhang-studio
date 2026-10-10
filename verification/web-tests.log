@@ -1,0 +1,75 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> munhang-studio@0.1.0 test
+> npm run test:web && npm run test:dom
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> munhang-studio@0.1.0 test:web
+> node --experimental-strip-types --test web/utils.test.ts
+
+✔ project round trip (2.202541ms)
+✔ blank project accepted (0.247684ms)
+✔ drag rectangle direction independent and clamped (0.158178ms)
+✔ reorder immutable (0.243146ms)
+✔ duplicate ids rejected (0.326432ms)
+✔ hostile image URL rejected (0.262626ms)
+✔ invalid numeric values rejected (0.51004ms)
+✔ HTML escaped (0.281284ms)
+✔ bytes decode (0.41079ms)
+✔ equation metadata and empty drafts round trip (0.87533ms)
+✔ equation metadata rejects remote images and malformed warnings (4.406165ms)
+✔ UTF-8 size checks count bytes and reject overflow without truncation (12.807644ms)
+✔ long equations are preserved as drafts but export enforces 16000 UTF8 bytes (1.154631ms)
+✔ project parser rejects an actual over-80MiB UTF8 payload (118.905206ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 319.506224
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> munhang-studio@0.1.0 test:dom
+> npm run build && node --test web/dom.test.mjs
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> munhang-studio@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 5 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                  0.62 kB │ gzip:  0.44 kB
+../dist/assets/index-CzGlRm-F.css  13.79 kB │ gzip:  3.97 kB
+../dist/assets/index-D5G-u1e8.js   31.44 kB │ gzip: 11.00 kB
+✓ built in 152ms
+✔ empty project has useful source and editor states (89.655397ms)
+✔ demo loads two editable questions and preview (58.7756ms)
+✔ add, edit, reorder, delete and layout update state (64.928866ms)
+✔ browser export is blocked with honest feedback (28.195294ms)
+✔ native export cancellation does not claim success (35.953145ms)
+✔ native JSON save uses backend and reports failures (14.846852ms)
+✔ quota error leaves JSON save route visible (19.203964ms)
+✔ source selection adds a crop image block (41.93751ms)
+✔ OCR results are rejected when edited target changes during await (50.668198ms)
+✔ formula OCR displays source, script and conversion warnings (61.414556ms)
+✔ manual equation references remain editable drafts and block HWPX only (47.44768ms)
+✔ 100-block boundary refuses additions without changing persisted project (57.900992ms)
+✔ 500-item boundary refuses additions without changing persisted project (179.904441ms)
+✔ oversized text, equation and title input retain prior valid content (42.846285ms)
+✔ invalid saved JSON stays untouched and exact raw data can be recovered (33.736671ms)
+✔ oversized OCR output is rejected without changing prior content (35.613783ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1198.66149
