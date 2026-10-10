@@ -58,6 +58,8 @@ CLI는 기존 출력 파일을 덮어쓰지 않습니다. 새 파일명을 지�
 
 ## 검증
 
+2026-10-10 [GitHub Actions CI](https://github.com/jum-apzn/munhang-studio/actions/runs/38060107671)에서 Ubuntu·Windows 네이티브 Tauri 빌드와 개발용 바이너리 생성이 통과했습니다. 실제 WebView 조작·한컴오피스 열기/편집/재저장은 아직 미검증입니다.
+
 ```sh
 cargo test --workspace
 cargo clippy --workspace --all-targets -- -D warnings
